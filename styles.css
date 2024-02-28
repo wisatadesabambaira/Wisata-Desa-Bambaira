@@ -54,8 +54,19 @@ body, .main-container {
 }
 
 .hamburger {
-    background-color: transparent;
+    background: transparent;
     border: none;
+    font-size: 24px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    padding: 10px;
+}
+
+.hamburger::after {
+    content: "Menu";
+    margin-left: 10px;
+    font-size: 20px;
 }
 
 .hamburger-menu {
