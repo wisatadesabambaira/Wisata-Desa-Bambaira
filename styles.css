@@ -6,6 +6,10 @@ body {
   min-height: 100vh;
 }
 
+.main-page-link {
+    text-decoration: none;
+}
+
 .main-container {
   flex: 1;
   display: flex;
