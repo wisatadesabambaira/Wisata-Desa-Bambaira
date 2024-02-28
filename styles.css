@@ -142,10 +142,15 @@ body,
 
 .artikel p {
     text-align: justify;
+    line-height: 2.0;
 }
 
 .artikel section {
     text-align: justify;
+}
+
+ul {
+    line-height: 2.0;
 }
 
 article {
