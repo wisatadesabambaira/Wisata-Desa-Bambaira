@@ -136,7 +136,11 @@ body,
   color: #007bff;
 }
 
-.artikel p, section {
+.artikel p {
+    text-align: justify;
+}
+
+.artikel section {
     text-align: justify;
 }
 
