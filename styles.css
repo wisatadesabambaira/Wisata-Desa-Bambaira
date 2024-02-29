@@ -171,6 +171,13 @@ article section {
   margin: 20px 0;
 }
 
+.content video {
+  max-width: 100%;
+  height: auto;
+  display: block;
+  margin: 20px 0;
+}
+
 .table-container {
     width: 100%;
     overflow-x: auto;
