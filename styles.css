@@ -164,16 +164,10 @@ article section {
   margin-top: 20px;
 }
 
-.content img {
+.content img, .content video {
   max-width: 100%;
-  height: auto;
-  display: block;
-  margin: 20px 0;
-}
-
-.content video {
-  max-width: 100%;
-  height: auto;
+  height: 300px;
+  object-fit: cover;
   display: block;
   margin: 20px 0;
 }
