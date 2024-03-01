@@ -11,7 +11,7 @@ body {
 }
 
 .main-container, .content {
-  max-width: 1200px;
+  width: 100%;
   margin: auto;
 }
 
@@ -20,6 +20,7 @@ body {
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
+  flex-grow: 1;
 }
 
 body,
@@ -28,6 +29,8 @@ body,
   flex-direction: column;
   min-height: 100vh;
   margin: 0;
+  padding: 0;
+  width: 100vw;
 }
 
 .header-content {
@@ -161,14 +164,11 @@ body,
   justify-content: center;
 }
 
-.content {
-  padding: 10px 20px;
-  margin-top: 0;
-}
-
-.content {
-  padding: 10px 20px;
-  margin-top: 0;
+.content, .artikel {
+  padding: 10px;
+  box-sizing: border-box;
+  margin: auto;
+  max-width: 100%;
 }
 
 .content h2 {
@@ -198,6 +198,7 @@ article section {
 
 .content img, .content video {
   width: 100%;
+  max-width: 100%;
   height: auto;
   object-fit: cover;
   display: block;
@@ -298,23 +299,27 @@ footer td:first-child {
   .navbar {
     justify-content: space-around;
   }
+
+  .maps .responsive-map-container {
+    width: 80%; /* Atau sesuaikan dengan kebutuhan */
+    margin: 0 auto; /* Pusatkan kontainer peta */
+}
+
+.maps .responsive-map {
+    /* Jika perlu, tambahkan gaya khusus untuk iframe di layar yang lebih besar */
+}
+
+.main-container {
+  margin: auto;
+  max-width: 100%;
+  padding: 0;
+}
 }
 
 @media (min-width: 1024px) {
   .maps .responsive-map-container {
     /* Mengurangi tinggi peta pada layar yang lebih besar */
     width: 60%; /* Sesuaikan nilai ini sesuai kebutuhan */
-  }
-}
-
-@media (min-width: 768px) {
-  .maps .responsive-map-container {
-      width: 80%; /* Atau sesuaikan dengan kebutuhan */
-      margin: 0 auto; /* Pusatkan kontainer peta */
-  }
-
-  .maps .responsive-map {
-      /* Jika perlu, tambahkan gaya khusus untuk iframe di layar yang lebih besar */
   }
 }
 
@@ -333,6 +338,15 @@ footer td:first-child {
   .hamburger {
     color: #007bff;
     font-size: 30px;
+  }
+
+  .content, .artikel {
+    padding: 5px;
+  }
+
+  .artikel p, .artikel h2 {
+    margin-left: 5px;
+    margin-right: 5px;
   }
 }
 
